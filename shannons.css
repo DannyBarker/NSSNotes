@@ -114,7 +114,7 @@ forum input {
 /* This edits background image at top of page */
 
 .background {
-  background-image: url(../images/shannonpic.jpg);
+  background-image: url(shannonpic.jpg);
   background-color: black;
   height: 300px;
   background-position: 50% 50%;
