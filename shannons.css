@@ -1,0 +1,181 @@
+/* This edits HTML */
+
+html {
+  background-color: #e9f2f2;
+}
+
+/* This edits anchor elements */
+
+a {
+  text-decoration: none;
+}
+
+/* This edits the header in the nav bar */
+
+h1 {
+  color: #1df0a9;
+  font-family: "Courier New", Courier, monospace;
+  position: top;
+  margin-top: 0;
+  padding-top: 0;
+}
+h1::first-letter {
+  font-size: 50px;
+  font-weight: bold;
+  color: black;
+}
+.heading {
+  background-color: #3209e6;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* This edits all section headings */
+
+h2 {
+  color: #3209e6;
+  background-color: #1df0a9;
+  border-radius: 10px;
+  padding-bottom: 0;
+  margin-top: 60px;
+  padding-top: 0;
+  padding-left: 10px;
+}
+
+/* This edits appointment headings */
+
+.add {
+  color: #3209e6;
+  background-color: #1df0a9;
+  border-radius: 10px;
+  padding-bottom: 0;
+  margin-top: 0;
+  padding-top: 0;
+  padding-left: 10px;
+}
+
+/* This edits sections */
+
+section {
+  border: solid #16f5e6 1px;
+  background-color: white;
+  padding-top: 0;
+  margin-top: 10px;
+}
+p {
+  padding-left: 5px;
+}
+
+/* This edits bottom appointment bar */
+
+.set {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding-top: 0;
+  margin-top: 10px;
+}
+div #schedule:not(.ignore) {
+  /* trying to make background with opacity but not input fields */
+  opacity: 0.85;
+  background-color: #e9f2f2;
+  margin-top: 0;
+  padding-top: 20px;
+}
+.scroll:hover {
+  background-color: #dee0e0;
+  color: black;
+  opacity: 1;
+}
+forum input {
+  padding: 2px 2px;
+  margin: 2px 2px;
+}
+.appointment {
+  background-color: #0ee3b1;
+  opacity: 0.85;
+  padding-right: 0;
+  margin-right: 850px;
+  padding-top: 0;
+  margin-bottom: 0;
+}
+#schedule h2 a {
+  color: #3209e6;
+}
+#schedule h2 a:hover {
+  color: black;
+}
+#schedule h2:hover {
+  background-color: #dee0e0;
+  padding-top: 0;
+  opacity: 1;
+}
+
+/* This edits background image at top of page */
+
+.background {
+  background-image: url(../images/shannonpic.jpg);
+  background-color: black;
+  height: 300px;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 30px;
+  margin-top: 0;
+}
+
+/* This edits social media aside */
+
+.aside {
+  border: solid #0ee3b1 0.5px;
+  border-radius: 10%;
+  background-color: rgb(244, 248, 248);
+  padding-left: 3px;
+  margin-right: 850px;
+  margin-top: 10px;
+}
+
+/* This edits top nave bar */
+
+/* nav {
+  margin-top: 60px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  padding-top: 60px;
+  padding-bottom: 10px;
+} */
+/* nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+} */
+nav ul li {
+  display: inline-block;
+  margin-bottom: 0;
+  margin-right: 8px;
+  color: #070d78;
+}
+/* nav ul li a {
+  color: #3209e6;
+  background-color: #0ee3b1;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: none;
+} */
+nav ul li a:hover {
+  background-color: #dee0e0;
+  color: black;
+}
+nav forum input::before {
+  content: url(../images/calendar.svg);
+}
+
+/* H4 editor */
+
+.margin {
+  margin-left: 15px;
+}
