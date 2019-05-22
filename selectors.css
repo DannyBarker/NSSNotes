@@ -1,0 +1,33 @@
+body {
+    background: #8A8A8A;
+}
+
+/* added on day 3. inline block allows is a hybrid between inline and block. this edits nav bar at top of page. */
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+/* edits h1 tags. Should only be day #'s. Added on day 3. */
+
+h1 {
+    background-color: #46DBDB;
+    color: white;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+/* Should edit everything under each day EXCEPT h1 tag. Added on day 3. */
+
+div {
+    background: #F0F2F2;
+    padding-top: 2px;
+    padding-bottom: 10px;
+}
+
+article {
+    margin-top: 20px;
+}
