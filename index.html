@@ -11,18 +11,19 @@
   <body>
     <a href="shannons.html">Shannon's</a>
     <nav>
-      <ul>
+      <ul class="parent">
         <li><a href="#d-one">Day One</a></li>
         <li><a href="#d-two">Day Two</a></li>
         <li><a href="#d-three">Day Three</a></li>
-        <li></li>
+        <li><a href="#d-four">Day Four</a></li>
         <li></li>
       </ul>
     </nav>
-    <article>
+    
+    <article class="">
       <h1 id="d-one">Day 1</h1>
-      <div>
-        <section>
+      <div class="child">
+        <section class="sectionflex">
             <ul>
                 <li>Introductions</li>
                 <li>Downloads</li>
@@ -31,10 +32,10 @@
       </div>
     </article>
 
-    <article>
+    <article class="">
       <h1 id="d-two">Day 2</h1>
-      <div>
-        <section>
+      <div class="child">
+        <section class="sectionflex">
             <ol>
                 <li>cd into workspace</li>
                 <li>mg directory</li>
@@ -48,10 +49,10 @@
       </div>
     </article>
 
-    <article>
+    <article class="">
       <h1 id="d-three">Day 3</h1>
-      <div>
-        <section>
+      <div class="child">
+        <section class="sectionflex">
           <h3><em>Specificity</em></h3>
           <p>Pecking Order:</p>
           <ol>
@@ -68,30 +69,52 @@
             </li>
           </ol>
         </section>
-        <h3>Git & Github</h3>
-        <p>There is a difference between "git" and "github".</p>
-        <p>Upload everything to Github. Shows progress and helps us get in habit.</p>
-        <h4>3 Commands:</h4>
-        <ol>
-          <li>Git add:
-            <ul>
-              <li>Adds untracked file(s) to an upcoming commit</li>
-              <li>You do not have to add 1:1. Just what you want to add for the next commit.</li>
-            </ul>
-          </li>
-          <li>Git commit
-            <ul>
-              <li>Will stage the changes that were made, and added, to be commited or logged.</li>
-            </ul>
-          </li>
-          <li>Git push
-            <ul>
-              <li>Commits are only local. You have to "push" commits, in order to, have them on a different system.</li>
-            </ul>
-          </li>
-        </ol>
-        <p>Git Log will show a history of all commits for a project. It, in theory, should show you the history/building blocks of the project.</p>
-        <p><b>Commit often!</b><em>You can't over-commit.</em></p>
+
+        <section class="sectionflex">
+          <h3>Git & Github</h3>
+          <p>There is a difference between "git" and "github".</p>
+          <p>Upload everything to Github. Shows progress and helps us get in habit.</p>
+          <h4>3 Commands:</h4>
+          <ol>
+            <li>Git add:
+              <ul>
+                <li>Adds untracked file(s) to an upcoming commit</li>
+                <li>You do not have to add 1:1. Just what you want to add for the next commit.</li>
+              </ul>
+            </li>
+            <li>Git commit
+              <ul>
+                <li>Will stage the changes that were made, and added, to be commited or logged.</li>
+              </ul>
+            </li>
+            <li>Git push
+              <ul>
+                <li>Commits are only local. You have to "push" commits, in order to, have them on a different system.</li>
+              </ul>
+            </li>
+          </ol>
+          <p>Git Log will show a history of all commits for a project. It, in theory, should show you the history/building blocks of the project.</p>
+          <p><b>Commit often!</b><em>You can't over-commit.</em></p>
+        </section>
+      </div>
+    </article>
+
+    <article class="">
+      <h1 id="d-four">Day 4</h1>
+      <div class="child">
+        <section class="sectionflex">
+          <h3>Flexbox</h3>
+          <h5><b>SUPER HELPFUL FOR FLEXBOX!</b></h5>
+          <p>Allows us to create responsive design. Knight in shining armor.</p>
+          <p>Practiced with Flexbox froggy.</p>
+        </section>
+        <section>
+          <h3>Git Branches</h3>
+          <p>Git checkout -b [filename]</p>
+          <p>Git checkout [filename] <em>---- switches between branches you've made and the master.</em></p>
+          <p>Different realities. Branch does not effect master until merged with master.</p>
+          <h5><b>DO NOT WRITE CODE ON MASTER.</b></h5>
+        </section>
       </div>
     </article>
 

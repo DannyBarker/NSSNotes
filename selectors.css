@@ -1,19 +1,40 @@
+/* added flex to body. day 4 */
+
 body {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-content: space-between;
     background: #8A8A8A;
 }
 
-/* added on day 3. inline block allows is a hybrid between inline and block. this edits nav bar at top of page. */
+/* Changed inline-block display to flex on day 4. allows the code to respond to different screen sizes */
+nav {
+    margin-bottom: 75px;
+    padding-bottom: 40px;
+}
 
-nav ul li {
-    display: inline-block;
+.parent {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: baseline;
+    position: fixed;
+}
+
+.parent li {
+    display: flex;
     margin-right: 10px;
     margin-bottom: 20px;
     padding-bottom: 10px;
 }
 
-/* edits h1 tags. Should only be day #'s. Added on day 3. */
+/* edits h1 tags. Should only be day #'s. Added on day 3. added display: flex on day 4 to add more userbility. */
 
 h1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
     background-color: #46DBDB;
     color: white;
     margin-top: 10px;
@@ -23,11 +44,22 @@ h1 {
 /* Should edit everything under each day EXCEPT h1 tag. Added on day 3. */
 
 div {
+    display: flex;
+    justify-content: space-between;
     background: #F0F2F2;
     padding-top: 2px;
     padding-bottom: 10px;
 }
 
-article {
-    margin-top: 20px;
+.child {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+} 
+
+.sectionflex {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: baseline;
 }
