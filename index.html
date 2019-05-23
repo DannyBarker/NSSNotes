@@ -134,6 +134,16 @@
             <li>Git branch <em>---- see if the branch deleted</em></li>
           </ol>
           <p>Git pull origin master <em>---- pulls master branch from remote master and merges it to local master. They should both sync up.</em></p>
+          <ol><h5>How to Clone Repo:</h5>
+            <li>Go into directory where you would like the repo to clone. <em>---- you do not have to perform "Git init" because the git clone will pull down the .git file and will make the local git for you.</em></li>
+            <li>Make sure that you are in the directory where you want the clone to go. <b>NOT THE DIRECTORY WHERE YOU WANT THE FILES TO GO</b> <em>---- because the clone will pull in the whole directory.</em></li>
+            <li>Go into repo on github that you are clonig</li>
+            <li>Git clone [paste ssh key or url] <em>---- url or ssh key of rpo you are cloning</em></li>
+          </ol>
+          <p><b>Just because you make a change to an old pull request, does not mean you have to make a new pull request.</b></p>
+          <p>"Git merge master" <em>---- merges new master with branch.</em><br>(if there are lines that are unable to merge you will receive a conflict message.)</p>
+          <p>You can accept "Current Change"; "Incoming Change"; or "Bother Changes"</p>
+          <p><b>Merge Conflict</b><br>Happens when there is no baseline to compare branches</p>
         </section>
       </div>
     </article>
