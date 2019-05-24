@@ -6,6 +6,10 @@ html {
 
 /* This edits anchor elements */
 
+body {
+  margin: 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -138,7 +142,7 @@ forum input {
 
 /* This edits top nave bar */
 
-nav {
+/* nav {
   margin-top: 60px;
   margin-bottom: 0px;
   padding-bottom: 0px;
@@ -172,21 +176,90 @@ nav ul li a:hover {
 }
 nav forum input::before {
   content: url(../images/calendar.svg);
-}
+} */
 
-/* Edits the responsiveness of the nav bar with flex */
-
-.container {
+nav {
   display: flex;
-  flex-direction: row | row-reverse | column | column-reverse;
+  justify-content: flex-start;
+  margin-bottom: 75px;
+
 }
 
-.children {
-  flex-basis: 25%;
+nav ul {
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  align-items: flex-end;
+  align-content: stretch;
+  position: fixed;
+  background-color: #00BF95;
+  width: 100%;
+  margin-top: 0;
+  padding-top: 0;
 }
 
-/* H4 editor */
+.nav_list {
+  display: flex;
+  padding-left: 0;
+}
 
-.margin {
-  margin-left: 15px;
+.nav_list li {
+  list-style: none;
+}
+
+.nav_list li a:hover {
+  background-color: #dee0e0;
+  color: black;
+}
+
+.buttons {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  background-color: #0ee3b1;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+li:not(.heading ol) {
+  border: .5px black solid;
+}
+
+.nav_list li a {
+  text-decoration: none;
+  color: #3209e6;
+  font-size: 16px;
+}
+
+.shrink {
+  flex-shrink: 1;
+}
+
+.shell {
+  display: flex;
+}
+
+.heading {
+  align-self: flex-start;
+  color: #1df0a9;
+  background-color: #3209e6;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 0;
+  padding-right: 5px;
+  margin-top: 5px;
+}
+
+.heading::first-letter {
+  font-size: 50px;
+  font-weight: bolder;
+  color: black;
+  background-color: purple;
+  margin-left: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.title {
+  display: flex;
 }
