@@ -9,11 +9,18 @@ body {
 }
 
 /* Changed inline-block display to flex on day 4. allows the code to respond to different screen sizes */
+.drop {
+    display: flex;
+    flex-flow: row wrap;
+}
+
 nav {
     display: flex;
     margin-bottom: 75px;
     padding-bottom: 40px;
 }
+
+
 
 .parent {
     display: flex;
