@@ -118,7 +118,7 @@ forum input {
 /* This edits background image at top of page */
 
 .background {
-  background-image: url(dog.jpeg);
+  background-image: url(img/dog.jpeg);
   background-color: black;
   height: 300px;
   background-position: 50% 50%;
