@@ -53,6 +53,7 @@ h1 {
 div {
     display: flex;
     justify-content: space-between;
+    flex-flow: column wrap;
     background: #F0F2F2;
     padding-top: 2px;
     padding-bottom: 10px;
@@ -61,8 +62,8 @@ div {
 
 .child {
     display: flex;
-    flex-flow: row wrap;
-    align-items: flex-end;
+    flex-flow: column wrap;
+    align-items: flex-start;
 } 
 
 .sectionflex {
@@ -78,4 +79,18 @@ div {
     bottom: 0;
     position: fixed;
     width: 100%;
+}
+
+a:active {
+    color: purple;
+}
+
+figure {
+    display: flex;
+    flex-flow: row wrap;
+}
+.img-size {
+    height: 300px;
+    width: 400px;
+    margin-right: 30px;
 }
