@@ -27,7 +27,6 @@ nav {
     flex-flow: row wrap;
     justify-content: flex-start;
     align-items: baseline;
-    position: fixed;
 }
 
 .parent li {
@@ -73,3 +72,10 @@ div {
     align-items: baseline;
 }
 
+.footer {
+    padding-top: 10px;
+    padding-bottom: 0px;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
