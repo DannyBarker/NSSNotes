@@ -26,7 +26,7 @@
           <option value="#d-six">Day Six</option>
           <option value="#d-seven">Day Seven</option>
           <option value="#d-eight">Day Eight</option>
-          <option></option>
+          <option value="d-nine">Day Nine</option>
           <option></option>
           <option></option>
         </select>
@@ -34,8 +34,8 @@
       
     <nav id="top">
       <ul class="parent">
-        <li class="hvr-overline-from-left"><a href="#d-one">Week One</a></li>
-        <li class="hvr-overline-from-left"><a href="#d-six">Week Two</a></li>
+        <li class="hvr-icon-fade hvr-overline-from-left"><a href="#d-one">Week One <i class="icon-target hvr-icon"></i></a></li>
+        <li class="hvr-icon-fade hvr-overline-from-left"><a href="#d-six">Week Two <i class="icon-target hvr-icon"></i></a></li>
         <li></li>
         <li></li>
       </ul>
@@ -380,15 +380,59 @@
         </div>
       </article>
 
+      <article class="">
+        <h1 id="d-nine">Day Nine</h1>
+        <div class="child">
+          <h3>Javascript</h3>
+          <section>
+            <p><b>Data</b></p>
+            <p>We're going to use Javascript as the bridge from the http browser to the server.</p>
+          </section>
+          <section>
+            <p><b><em>CRUD</em></b></p>
+            <ul>
+              <li><b>C</b>reate</li>
+              <li><b>R</b>ead</li>
+              <li><b>U</b>pdate</li>
+              <li><b>D</b>estroy</li>
+            </ul>
+            <p>All facilitated by Javascript</p>
+          </section>
+          <section>
+              <p><b><em>SPA</em></b></p>
+              <p>Single Page Application</p>
+              <p>We're going to build and serve up a single HTML file. We're going to use Javascript to dynamically swap out data. Creating an illusion of loading separate pages. </p>
+          </section>
+          <section>
+            <h3>Programming is 3 things:</h3>
+            <ol>
+              <li>setting values - <em>const</em></li> 
+              <li>iterating over-collections - <em>const names</em></li>
+              <li>evaluating conditions - <em>if/else statements</em></li>
+            </ol>
+          </section>
+          <p>The ultimate goal is to know why you used something. <em>Why did you use a for loop?</em> <em>Why didn't you use something else?</em></p>
+          <section>
+            <h3>DOM Interaction</h3>
+            <p><a href="https://github.com/nashville-software-school/client-side-mastery/blob/master/book-2-the-neophyte/chapters/IDENTIFYING_DOM_COMPONENTS.md" target="_blank">Chapter Link</a></p>
+            <p><em></em>.querySelector()</em> is a function you can execute to give you a value</p>
+            <p>Will give you the first object, the one highest up.</p>
+            <p>When you see <em>Method</em> think function</p>
+            <p>label your console.log's <em>console.log('[label]' ,     )</em></p>
+            <p><em>.querySelectorAll()</em> will select all elements</p>
+            <p>You can stop time by adding a break point in the browser.</p>
+          </section>
+        </div>
+      </article>
 
       <fieldset>
-        <a href="#top">Top</a>
+        <a href="#top" class="upArrow hvr-bubble-top">Top</a>
       </fieldset>
       
       <hr>
 
       <footer class="footer">
-        <a href="#top">Top</a>
+        <a href="#top" class="upArrow hvr-bubble-top">Top</a>
       </footer>
   </body>
 </html>
