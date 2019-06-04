@@ -26,9 +26,13 @@
           <option value="#d-six">Day Six</option>
           <option value="#d-seven">Day Seven</option>
           <option value="#d-eight">Day Eight</option>
-          <option value="d-nine">Day Nine</option>
-          <option></option>
-          <option></option>
+          <option value="#d-nine">Day Nine</option>
+        </select>
+        <select onchange="location.href=this.value">
+            <option value="#d-ten">Week Three</option>
+            <option value="#d-ten">Day Ten</option>
+            <option value="#d-Eleven">Day Eleven</option>
+            <option value="#d-"></option>
         </select>
       </fieldset>
       
@@ -458,7 +462,7 @@
           <section>
             <h3>Dot and Bracket Notation</h3>
             <p>You can use dot notation to get/add values to an object.</p>
-            <p>Examples in "mondayEx3" folder.</p>
+            <p>Examples in "mondayEx3" directory.</p>
             <p><em>Why use Bracket Notation?</em></p>
             <p>You can use a variable name between the brackets. With Dot Notation
               you have to use the actual key.
@@ -488,6 +492,48 @@
         </div>
       </article>
 
+      <article class="">
+          <h1 id="d-eleven">Day Eleven</h1>
+          <div class="child">
+            <section> 
+              <p>Examples in "tuesdayEx" directory.</p>
+              <h3><em>"For each"</em>Method</h3>
+              <p>[arrayname].forEach( function([variable_that_we_define]))<br>
+              console.log(`${[variable_that_we_define].[array_attribute]}`)</p>
+              <p>ex.<br>
+              let employees = [object{title, name, age}, object2{title, name, age}, object3{title, name, age}]<br>
+              employees.forEach( function(taco) {<br>
+              console.log(`${taco.name}'s job title is ${taco.title}`); <br>
+              });
+              </p>
+              <p><b>Make sure parantheses enclose whole method</b> <em>starting before "function(taco)" to after closing bracket.</em></p>
+              <p>The <em>"Variable that we define"</em> is what we want the method to refer to.</p>
+              <p>This method knows that it will call the for-loop as a function to run through the loop. We don't need to call the function anymore.</p>
+            </section>
+            <section>
+              <h3>Objects Representing Things</h3>
+              <p>Objects are made up of properties.</p>
+              <p>Objects are building blocks</p>
+              <h3>Object State</h3>
+              <p>Means: What are the values of the objects properties <em>right now</em> at this particular moment in time.</p>
+              <p>States position an object in time and space. If something changes the state/data you can have your code respond and store it.</p>
+            </section>
+            <section>
+              <h3>Object Behavior</h3>
+              <p>You use methods (functions) to determine a behavior of an object.</p>
+              <p>Functions are called "methods" when they are used in context with objects.</p>
+            </section>
+            <secton>
+              <h3>THIS</h3>
+              <p>Refers to the execution context.</p>
+              <p>Essentially a replacement/placeholder word for the object that it's inside. <b>NOT</b> 100% true.</p>
+              <p>Only works on methods within the object</p>
+            </secton>
+            <section>
+              
+            </section>
+          </div>
+      </article>
       <fieldset>
         <a href="#top" class="upArrow hvr-bubble-top">Top</a>
       </fieldset>
