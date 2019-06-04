@@ -31,7 +31,7 @@
         <select onchange="location.href=this.value">
             <option value="#d-ten">Week Three</option>
             <option value="#d-ten">Day Ten</option>
-            <option value="#d-Eleven">Day Eleven</option>
+            <option value="#d-eleven">Day Eleven</option>
             <option value="#d-"></option>
         </select>
       </fieldset>
@@ -530,7 +530,45 @@
               <p>Only works on methods within the object</p>
             </secton>
             <section>
-              
+              <h3>Building DOM Components</h3>
+              <p>Create a template of HTML using Javascript</p>
+              <p>Make a function.</p>
+            </section>
+            <section>
+              <h3>Scope</h3>
+              <p>People don't like Javascript because it is a loosely typed language. In other words, it's very loose on things.</p>
+              <p>3 Ways of Declaring Variable:
+                <ul>
+                  <li><em>var</em></li>
+                  <li><em>let</em></li>
+                  <li><em>const</em></li>
+                </ul>
+              </p>
+              <h5>Var</h5>
+              <p>Var has no respect for scope</p>
+              <p>Global scope is the Window object</p>
+              <p>Curly brackets make a new scope</p>
+              <p>There is not only scope, but there are different kinds of scope</p>
+              <p>Variables inside a function are private variables</p>
+              <p>Var respects only function scope not block scope</p>
+              <p>With scope you can always look up to find a value, but never down</p>
+              <h5>Let</h5>
+              <p>Respects block and function scope</p>
+              <p>With "let" the only way you can access it is within the same scope</p>
+              <p>"Var" and "Let" work more similar to each-other than "Const"</p>
+              <h5>Const</h5>
+              <p>"Const" is the most restrictive of the 3.</p>
+              <p>It will not let you reassign values or re-declare variables.</p>
+              <p>Reassigning is not the same as updating a value.</p>
+              <p><em>ex. <br>
+              const myObj = {<br>
+              name: "Linda",<br>
+              age: 134,<br>
+              }<br>
+              myObj.age = 29;</em>
+            </p>
+            <p>You are only changing the values of the object, BUT you are not changing the "const" variable which is an object.</p>
+            <p>This works the same with an array</p>
             </section>
           </div>
       </article>
