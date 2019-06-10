@@ -4,7 +4,6 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <!-- <script src="script.js"></script> -->
         <link href="shannons.css" rel="stylesheet" type="text/css">
         <title>Shannon's Hair Shop</title>
     </head>
@@ -76,11 +75,11 @@
                         <forum>
                             <input type="text" placeholder="Name"> <!-- Tried to add class="ignore" but that didn't work with :not pseudoclass -->
                             <input type="text" placeholder="Number">
-                            <input type="text" placeholder="Email">
+                            <input id="email" type="text" placeholder="Email">
                             <input type="text" placeholder="Date">
                             <input type="text" placeholder="Time">
                             <input type="text" placeholder="Service">
-                            <button>Submit</button>
+                            <button id="create_appointment">Submit</button>
                         </forum>
                     </div>
                 </div>
@@ -96,5 +95,7 @@
         <footer>
             <a href="#top"><small>Top of Page</small></a>
         </footer>
+        <script src="key.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>
