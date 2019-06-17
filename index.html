@@ -837,7 +837,48 @@
               <em>&lt;script type="module" src="[file]"&gt;&lt;/script&gt;</em>
             </p>
             <p>Avoid importing things from a module that you are also exporting to. Creates circle dependability.</p>
-            
+            <h3>CRUD</h3>
+            <p>recall : <br>
+              <ul>
+                <li>Create</li>
+                <li>Read</li>
+                <li>Update</li>
+                <li>Destroy</li>
+              </ul>
+            </p>
+            <p>We are going to learn how to "update" and "destroy"</p>
+            <p><em>fetch("url", { <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;method: "POST", <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;headers: { <br>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Content-Type": "application/json" <br>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;}, <br>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;body: JSON.stringify([object being saved]) <br>
+              }) <br>
+              <br>
+              <br>
+              .then( stuff => stuff.json()) <br>
+              .then( stuffJS => console.log(stuffJS))
+            </em></p>
+            <h3>Object Literaly Shorthand</h3>
+            <p>you can write this... <br>
+              <br>
+              <em> let color = blue <br>
+              let newObj = { <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; color: color; <br>
+              } </em><br>
+              as this... <br>
+              <br>
+              <em> let color = blue <br>
+              let newObj = { <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;color <br>
+              }</em>
+            </p>
+            <p>"PUT" is for changing data of a json database. "POST" is for adding new, persisting data.</p>
+            <h3>Factory Function</h3>
+            <p>Has to be a function that returns and object</p>
 
           </section>
         </div>
