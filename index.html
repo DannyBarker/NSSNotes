@@ -44,6 +44,14 @@
           <option value="#d-eightteen">June 13th</option>
           <option value="#d-nineteen">June 14th</option>
         </select>
+        <select onchange="location.href=this.value">
+          <option value="#d-twenty">W5: June17-21</option>
+          <option value="#d-twenty">June 17th</option>
+          <option value="#d-">June 18th</option>
+          <option value="#d-">June 19th</option>
+          <option value="#d-">June 20th</option>
+          <option value="#d-">June 21st</option>
+        </select>
       </fieldset>
       
     <nav id="top">
@@ -51,6 +59,8 @@
         <li class="hvr-icon-fade hvr-overline-from-left"><a href="#d-one">Week One <i class="icon-target hvr-icon"></i></a></li>
         <li class="hvr-icon-fade hvr-overline-from-left"><a href="#d-six">Week Two <i class="icon-target hvr-icon"></i></a></li>
         <li class="hvr-icon-fade hvr-overline-from-left"><a href="#d-ten">Week Three <i class="icon-target hvr-icon"></i></a></li>
+        <li class="hvr-icon-fade hvr-overline-from-left"><a href="#d-fifteen">Week Four<i class="icon-target hvr-icon"></i></a></li>
+        <li class="hvr-icon-fade hvr-overline-from-left"><a href="#d-twenty">Week Five<i class="icon-target hvr-icon"></i></a></li>
         <li></li>
       </ul>
     </nav>
@@ -784,10 +794,55 @@
           </div>
       </article>
 
-      <fieldset>
-        <a href="#top" class="upArrow hvr-bubble-top">Top</a>
-      </fieldset>
-      
+       <!--                        
+    
+      Week 5                                        
+
+      -->
+
+      <article class="">
+        <h1 id="d-twenty">June 17th</h1>
+        <div class="child">
+          <section>
+            <p>Using innerHTML is dangerous because your HTML is sitting in the open. Which, 
+              people can leverage to use in not so good ways. 
+            </p>
+            <p>"<em>document.createElement("[element]")</em>"</p>
+            <p>ex. <br> 
+              "<em>function addCard to Dom(element, card) { <br>
+                let newElement = document. createElement("div") <br>
+                newElement.innerHTML = '[what you want HTML to be]' <br>
+                element.appendChild(newElement)
+            </em></p>
+            <p>How do you add an element with classes and id's?</p>
+            <p><em>[object].setAttribute('[what attribute]', '[what attribute name]')</em> <br>
+              This takes two arguments. What attribute that you want to add ex. 'class', 'id', etc.
+              and the name of said attribute.
+            </p>
+            <h3>ES6 Modules</h3>
+            <p>Using the module syntax allows us to wrap everything in its own scope.</p>
+            <p>This gives you the ability to have private and public interfaces. </p>
+            <p>Using module syntax, you have to use an export statement to expose things to the rest of the app. ex. <br>
+              <em>export {[objct being exported], etc.}</em> <br>
+              Multiple objects are separated by ","'s.
+              <em>export let object = 'string'</em>
+              You can also export in-line.
+            </p>
+            <p>Then import objects. ex. <br>
+              <em>import {[object being imported], etc.} from "./.[file being imported from]"</em>
+              Multiple objects are separated by ","'s.
+            </p>
+            <p>You can then go to your HTML and remove all script tags <strong>EXCEPT</strong> your entry file.</p>
+            <p>Be sure to tell your HTML script tag that it is a "module". ex. <br>
+              <em>&lt;script type="module" src="[file]"&gt;&lt;/script&gt;</em>
+            </p>
+            <p>Avoid importing things from a module that you are also exporting to. Creates circle dependability.</p>
+            
+
+          </section>
+        </div>
+      </article>
+
       <hr>
 
       <footer class="footer">
