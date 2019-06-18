@@ -47,7 +47,7 @@
         <select onchange="location.href=this.value">
           <option value="#d-twenty">W5: June17-21</option>
           <option value="#d-twenty">June 17th</option>
-          <option value="#d-">June 18th</option>
+          <option value="#d-twentyone">June 18th</option>
           <option value="#d-">June 19th</option>
           <option value="#d-">June 20th</option>
           <option value="#d-">June 21st</option>
@@ -879,8 +879,84 @@
             <p>"PUT" is for changing data of a json database. "POST" is for adding new, persisting data.</p>
             <h3>Factory Function</h3>
             <p>Has to be a function that returns and object</p>
-
           </section>
+        </div>
+      </article>
+
+      <article class="">
+        <h1 id="d-twentyone">June 18th</h1>
+        <div class="child">
+          <h3>Modularity</h3>
+          <p>Moving things to their own module is so they can be used by any other module. "Reusability"</p>
+          <p>Modularization doesn't speed up the process of loading script files. Just makes our life easier. 
+            With not having to know how to order multiple script tags.
+          </p>
+          <h3>Array Methods</h3>
+          <p>.reverse() will switch the order, of an array, to be backwards. 
+            This will change the actual state of the array.
+          </p>
+          <p>.pop() will remove the end of the array and will change the actual state of the array.</p>
+          <p>.join() will make an array a string. It will NOT change the actual state of the array.</p>
+          <p>.slice([first index], [second index]) will pull everything from the [first index] value 
+            to right before the [second index] value. This does not change the state of the array. 
+          </p>
+          <p>.splice([first index], [how many objects removing], '[what is being added]') will allow you to insert and
+             delete things from an array. The [first index] says where you want to insert an object or where to start
+             removing objects. [How many objects removing] specifies the number of objects you want to remove. 
+             [What is being added] is the string or number you want to add at the [first index]. This will change the 
+             state of an array.
+            </p>
+            <p>.sort() will sort the array. It is a loop that sorts based on the first digit in each number. <br>
+              <br>
+              ex. <br>
+              <em>[1, 10, 234, 6, 9]</em><br> 
+              will be the same after sort <br>
+              <em>[1, 10, 234, 6, 9]</em> <br>
+              <br>
+              Because the first numbers are in order. For 
+              Will change the state of the array.
+              It will also alphabatize an array. 
+              .sort() can also take an argument. ex. <br>
+              <br>
+              <em>arr.sort ( ( current, next) => current - next)</em> <br>
+              <br>
+              You can also sort array objects based off of their properties.
+              </p>
+              <p>.find() is a loop that finds the first item in an array that meets the condition. ex. <br>
+              arr.find( [obj] => [conditions]). If you want to find every item, you will need to loop through again.
+              </p>
+              <p>.filter() is a loop that takes a function as an argument. It must return something. ex. <br>
+                <br>
+                <em>arr.filter ([function with a condition])</em> <br>
+                <br>
+                Will only return item to newArr if the condition returns true. newArr will be an array. 
+                .filter is just a short way of writing this: <br>
+                <br><em>
+                let emptyArr = [] <br>
+                for (let i = 0; i < arr.length; i++) { <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;if ([condition]) { <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;emptyArr.push(arr[i]) <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                } <br></em>
+                <br>
+              </p>
+              <p>.map() allows you to mutate values in an array and add the new values to a new array. 
+                <strong>YOU HAVE TO STORE MAP AS A VARIABLE</strong> because it is making a new array. Otherwise,
+                you would have no way to access the new array.
+                ex. <br>
+                <br>
+              <em>let newArr = arr.map( [condition])</em> <br>
+              <br>
+              .map() will take a [condition] and return something back. It will also make a new array. <br>
+              You can also use .map() to create an array of strings. ex. <br>
+              <br> <em>
+              const strings = arrObj => { <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;return `string with ${arrObj.prop}` <br>
+              } <br>
+              let stringArr = arr.map(strings)</em> <br>
+              <br>
+              
+              </p>
         </div>
       </article>
 
