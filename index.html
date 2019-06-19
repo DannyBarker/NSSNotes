@@ -980,7 +980,21 @@
           <p>How to change remote of a repo: "<em>git remote set-url origin</em>"</p>
 
           <h3>CRUD --- Delete</h3>
-          
+          <p><em>fetch(`[url with ${id}]`, { <br>
+            &nbsp;&nbsp;&nbsp;&nbsp; method: "DELETE", <br>
+            &nbsp;&nbsp;&nbsp;&nbsp; headers: { <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "Content-Type": "application/json" <br>
+            } <br>
+          }) <br>
+          .then( res => res.json())
+        </em></p>
+        <p>If you pass in the arrObj.id into the button id, you don't need to give a button an id. ex. <br>
+          <em>
+            `<button id="${arr.id}">Button</button>`
+          </em>
+        </p>
+
+
         </div>
       </article>
 
