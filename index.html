@@ -49,8 +49,16 @@
           <option value="#d-twenty">June 17th</option>
           <option value="#d-twentyone">June 18th</option>
           <option value="#d-twentytwo">June 19th</option>
-          <option value="#d-">June 20th</option>
-          <option value="#d-">June 21st</option>
+          <option value="#d-twentythree">June 20th</option>
+          <option value="#d-twentyfour">June 21st</option>
+        </select>
+        <select onchange="location.href=this.value">
+          <option value="#d-twentyfive">W6: June24-28</option>
+          <option value="#d-twentyfive">June 24th</option>
+          <option value="#d-">June 25th</option>
+          <option value="#d-">June 26th</option>
+          <option value="#d-">June 27th</option>
+          <option value="#d-">June 28th</option>
         </select>
       </fieldset>
       
@@ -61,6 +69,7 @@
         <li class="hvr-icon-fade hvr-overline-from-left"><a href="#d-ten">Week Three <i class="icon-target hvr-icon"></i></a></li>
         <li class="hvr-icon-fade hvr-overline-from-left"><a href="#d-fifteen">Week Four<i class="icon-target hvr-icon"></i></a></li>
         <li class="hvr-icon-fade hvr-overline-from-left"><a href="#d-twenty">Week Five<i class="icon-target hvr-icon"></i></a></li>
+        <li class="hvr-icon-fade hvr-overline-from-left"><a href="#d-twentyfive">Week Six<i class="icon-target hvr-icon"></i></a></li>
         <li></li>
       </ul>
     </nav>
@@ -1041,11 +1050,61 @@
         </div>
       </article>
 
+      <article class="">
+        <h1 id="d-twentryfour">June 21st</h1>
+        <div class="child">
+          <p>Independent, directed-study day</p>
+        </div>
+      </article>
+
+      <!--                        
+    
+      Week 6                                       
+
+      -->
+
+      <article class="">
+          <h1 id="d-twentyfive">June 24th</h1>
+          <div class="child">
+            <p><em>"document.createDocumentFragment()"</em> is like <em>"document.createElement()"</em> <b>EXCEPT</b>
+              you do not need to make an element that contains other elements like createElement. It's kind of like a 
+              wrapper that contains what you what to add to the DOM withought showing up.
+            </p>
+            <p><em>"form"</em> tags is the automatic process of running an http-post request</p>
+            <p><em>"event.preventDefault()"</em> will override the default form tag.</p>
+            <p><em>"for in"</em> loops are for itterating over objects. It will give you the keys. ex. <br>
+              <br><em>
+                for (let foo in [object]) { <br>
+                  console.log(foo) <br>
+                } <br>
+              </em>
+              <br>
+              If you wanted to access the key value you would console.log(object[foo]). You cannot use dot notation
+              with variables. You have to use bracket notation. ex. <br>
+              <br><em>
+                  for (let foo in [object]) { <br>
+                    console.log(object[foo]) <br>
+                  } <br>
+              </em>
+              <br>
+            </p>
+            <p><em>"for ( let foo of Object.keys([object])) { }"</em> will return the keys of an object.</p>
+            <p><em>"for ( let foo of Object.values([object])) { }"</em> will return the key values of an object.</p>
+            <p><em>"for ( let foo of Object.entries([object])) { }"</em> will return the key and the key values in an
+             array. ex. <br>
+             <br>
+             <em>('[key]', '[key-value]')</em> <br>
+             <br>
+            </p>
+          </div>
+        </article> 
+
       <hr>
 
       <footer class="footer">
         <a href="#top" class="upArrow hvr-bubble-top">Top</a>
       </footer>
+      <script src="main.js"></script>
   </body>
 </html>
 

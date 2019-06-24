@@ -1,11 +1,19 @@
 /* added flex to body. day 4 */
-
+:root {
+  --background: #8A8A8A;
+  --secondary-background: #A2A6A3;
+  --div-background: #F0F2F2;
+  --anchor-color: #04E0E0;
+  --header-color: #46DBDB;
+  --button-effect-color: #2098D1;
+  --header-txt-color: white;
+}
 body {
     display: flex;
     flex-flow: column wrap;
     justify-content: flex-start;
     align-content: space-between;
-    background: #8A8A8A;
+    background: var(--background);
 }
 
 /* Changed inline-block display to flex on day 4. allows the code to respond to different screen sizes */
@@ -34,13 +42,13 @@ nav {
     margin-right: 10px;
     margin-bottom: 20px;
     padding-top: 5px;
-    background: #A2A6A3;
+    background: var(--secondary-background);
 }
 
 .parent li a {
     display: flex;
     text-decoration: none;
-    color: #04E0E0;
+    color: var(--anchor-color);
 }
 
 /* edits h1 tags. Should only be day #'s. Added on day 3. added display: flex on day 4 to add more userbility. */
@@ -49,8 +57,8 @@ h1 {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    background-color: #46DBDB;
-    color: white;
+    background-color: var(--header-color);
+    color: var(--header-txt-color);
     margin-top: 10px;
     padding-top: 10px;
 }
@@ -61,7 +69,7 @@ div {
     display: flex;
     justify-content: space-between;
     flex-flow: column wrap;
-    background: #F0F2F2;
+    background: var(--div-background);
     padding-top: 2px;
     padding-bottom: 10px;
     padding-left: 10px;
@@ -106,8 +114,8 @@ figure {
 
 .upArrow {
     text-decoration: none;
-    background-color: #A2A6A3;
-    color: #04E0E0;
+    background-color: var(--secondary-background);
+    color: var(--anchor-color);
     padding-left: 5px;
     padding-right: 5px;
     opacity: .85;
@@ -131,7 +139,7 @@ figure {
     left: 0;
     right: 100%;
     top: 0;
-    background: #2098D1;
+    background: var(--button-effect-color);
     height: 4px;
     -webkit-transition-property: right;
     transition-property: right;
@@ -163,7 +171,7 @@ figure {
     transition-property: color;
   }
   .hvr-icon-fade:hover .hvr-icon, .hvr-icon-fade:focus .hvr-icon, .hvr-icon-fade:active .hvr-icon {
-    color: #2098D1;
+    color: var(--button-effect-color);
   }
 
   /* hover effect for top button */
@@ -189,7 +197,7 @@ figure {
     left: calc(50% - 10px);
     top: 0;
     border-width: 0 10px 10px 10px;
-    border-color: transparent transparent #A2A6A3 transparent;
+    border-color: transparent transparent var(--secondary-background) transparent;
   }
   .hvr-bubble-top:hover:before, .hvr-bubble-top:focus:before, .hvr-bubble-top:active:before {
     -webkit-transform: translateY(-10px);
