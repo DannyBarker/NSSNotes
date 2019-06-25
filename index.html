@@ -55,7 +55,7 @@
         <select onchange="location.href=this.value">
           <option value="#d-twentyfive">W6: June24-28</option>
           <option value="#d-twentyfive">June 24th</option>
-          <option value="#d-">June 25th</option>
+          <option value="#d-twentysix">June 25th</option>
           <option value="#d-">June 26th</option>
           <option value="#d-">June 27th</option>
           <option value="#d-">June 28th</option>
@@ -1131,6 +1131,97 @@
             
           </div>
         </article> 
+
+        <article class="">
+          <h1 id="d-twentysix">June 25th</h1>
+          <div class="child">
+            <h3>ERD</h3>
+            <p>"Entity Relationship Diagram"</p>
+            <p>There is no one way to do this.</p>
+            <p><a href="http://dbdiagram.io" target="_blank">dbdiagram</a></p>
+            <p>Keep data "flat"</p>
+            <p>different collections for different key-values. ex. <br>
+              <br> <em>
+                <b>people:</b> [ <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;{<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id: 1 <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name: 'Jon Doe', <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fave-foodId: 1, <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;}, <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;{ <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id: 2 <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name: 'Jane Doe', <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fave-foodId: 1, <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                ] <br>
+                  <br>
+                <b>food:</b> [ <br> 
+                &nbsp;&nbsp;&nbsp;&nbsp; { <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  id: 1, <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  name: 'cheetos', <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; calories: 500, <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; brand: 'Frito-lay' <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;}, <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;{<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; id: 2, <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; name: 'pasts', <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; calories: 350, <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; brand: null <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                ] <br>
+              </em><br>
+              'fave-foodId' refers back to the 'food' array of objects.
+            </p>
+            <ul>
+              <li>
+                <b>"Entity"</b> <br>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;An entity is a blueprint to make a new thing</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;It's a model</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;Practices single responsiblity</p>
+                <ol>
+                  <li>Always start with an Id.</li>
+                  <li>List properties of thing</li>
+                </ol>
+              </li>
+              <br>
+              <li>
+                <b>"Relationship"</b> <br>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;Connect relationships between different entities.
+                  if entities rely on eachother, define that relationship.
+                </p>
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Flow is one -> many.
+                </p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;If an Entity is being used with multiple entities, then you represent
+                  that with "crows' feet"
+                </p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp; If we know that a key is going to be a "string" then say it. ex. <br> 
+                  <br> <em>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name: string, <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } <br>
+                  <br> </em>
+                </p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;An entity's Id is known as it's "Primary-Key" represented as "PK"</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;An Id that is being referenced in another entity is a "Foreign-Key"
+                  because the entity with that Id already exists. Represented as "FK". 
+                </p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;An entity can only have <b>ONE</b> "Primary-Key", but <b>MULTIPLE</b> "Foreign-Keys"</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;Entity Id's will <b>NEVER</b> change, or be given to multiple Entities.</p>
+              </li>
+              <li>
+                <b>Diagram</b> <br>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://dbdiagram.io" target="_blank">dbdiagram</a></p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp; 1:M - one to many relationship</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp; 1:1 - one to one relationship [user access]</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp; M:M - many to many relationship</p>
+              </li>
+            </ol>
+            <h3>Joint Tables</h3>
+            <p>aliases: Junction Table; Joiner Table</p>
+            <p>Type of entity.</p>
+          </div>
+        </article>
 
       <hr>
 
