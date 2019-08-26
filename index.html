@@ -9,7 +9,9 @@
   </head>
 
   <body>
-    <p><a href="https://github.com/nashville-software-school/client-side-mastery" target="blank">Criteria</a></p>
+    <p><a href="https://github.com/nashville-software-school/client-side-mastery" target="blank"> Front End Criteria</a></p>
+    <p><a href="https://github.com/nashville-software-school/bangazon-llc" target="blank"> Back End Criteria</a></p>
+
     <a href="shannons.html">Shannon's</a>
 
     <fieldset class="drop">
@@ -81,6 +83,14 @@
         <option value="#d-fourty">July 17th</option>
         <option value="#d-fourtyone">July 18th</option>
         <option value="#d-fourtytwo">July 19th</option>
+      </select>
+      <select onchange="location.href=this.value">
+        <option value="#d-sixtythree">W14: Aug26th-30th</option>
+        <option value="#d-sixtyfour">Aug 26th</option>
+        <option value="#d-sixtyfive">Aug 27th</option>
+        <option value="#d-sixtysix">Aug 28th</option>
+        <option value="#d-sixtyseven">Aug 29th</option>
+        <option value="#d-sixtyeight">Aug 30th</option>
       </select>
     </fieldset>
 
@@ -1503,7 +1513,7 @@
     </article>
 
     <article class="">
-      <h1 id="d-fourty">June 17th</h1>
+      <h1 id="d-fourty">July 17th</h1>
       <div class="child">
         <h3>Conditional Rendering</h3>
         <p>Protects http routes from users who aren't supposed to be there. It prevents them from
@@ -1513,9 +1523,235 @@
     </article>
 
     <article class="">
-      <h1 id="d-fourtyone">June 18th</h1>
+      <h1 id="d-fourtyone">July 18th</h1>
       <div class="child">
-        
+
+      </div>
+    </article>
+
+    <article class="">
+      <h1 id="d-sixtythree">August 23rd</h1>
+      <div class="child">
+        <h13>Python Day 1:</h13>
+        <p>
+          2 weeks of just pure Python <br>
+          Then sequel to query a database <br>
+          Then Django web app <br>
+          Then Django rest web api <br>
+          Python is very different than Javascript in a very different way, it runs in an IDE or "run time environment". <br>
+        </p>
+        <p>
+          When we install python, we are installing a command line app
+        </p>
+        <p>
+          What does it mean when you are executing this code. Front End vs. Back End,
+          "Where is this code being executed?"
+        </p>
+        <p>
+          <ol>
+            <li>handling Queries</li>
+            <li>Providing human readable data</li>
+          </ol>
+        </p>
+        <h3>Server Side vs. Client Side</h3>
+        <p>
+          <ol>
+            Client Side
+            <li>Type Domain into the URL</li>
+            <li>The CSS how it looks</li>
+            <li>Navigation Elements (navbar, footer, search bar)</li>
+            <li>The fully rendered web page</li>
+          </ol>
+        </p>
+        <p>
+          <ol>
+            Server Side
+            <li>Http server/live server</li>
+            <li>The database (not to be consumed by the user)</li>
+          </ol>
+        </p>
+        <p>
+          How Do they Communicate with eachother?
+          ...
+          <br>
+          HTTP
+        </p>
+        <p>
+          User makes a request, and HTTP bring back the response
+        </p>
+        <p>
+          Web server is the first peson who handles a request <br>
+          it routes the request to where it needs to be
+        </p>
+        <p>
+          Application server is who handles the actual request <br>
+          we are going to live in the application server for a while
+        </p>
+        <p>
+          We're going to learn a language within a language. (Sequel that will be wrapped up in Python code)
+        </p>
+        <h3>Acronyms</h3>
+        <ol>
+          <li>Python is the language and the program that interprets our code</li>
+          <li>SQL ... we will be writing SQL code in Python. </li>
+          <li>RDBMS ... what was json-server will now be sqlite</li>
+          <li>Django ... python community framework that follow MVC</li>
+          <li>
+            MVC ... "Model View and Controller" Models are in code to reflect how database looks. View how you present code to user.
+            Controller is the brains, where we will be writing the logic (where we will be spending the majority of our time).
+          </li>
+          <li>Django's words for MVC are "V" = controller & "C" = Template ... "Model Controller Template"</li>
+          <li>
+            ORM ... "Object Relational Mapper" is connected with SQL. A tool that extracts the SQL away from us. A higher order language
+            Reduces errors (very confusing)
+          </li>
+          <li>
+            OOP ... "Object Oriented Programming".
+             <ol>
+              <li>Abstraction ... used in client side course. Simplifying something that is complex.</li>
+              <li>Inheritance</li>
+              <li>Polymorphism</li>
+              <li>Encapsulation ... used in client side course. Javascript module.</li>
+            </ol>
+          </li>
+        </ol>
+
+      </div>
+    </article>
+
+    <article class="">
+      <h1 id="d-sixtyfour">June 16th</h1>
+      <div class="child">
+        <h3>First Day of Python</h3>
+        <h4>Collections</h4>
+        <p>
+          Array = List [] <br>
+          object = Dictionary {}
+        </p>
+        <h4>List []</h4>
+        <p>
+          Lists are like arrays and are a "junk drawer", so they take everything. ex. strings, number, booleans, dictionaries, and lists<br>
+          side note ... booleans are capatilized "True" & "False" <br>
+          <em>my_list = ["hello", "world", 2, True, [1,2,3], {"name": "Fred"}]</em>
+        </p>
+        <p>
+          .append() is the new .push() <br>
+          .append() only allows you to add one thing
+        </p>
+        <p>
+          .extend() takes an iterable <br>
+          <em>my_list.extend(["Mary", "matthew", "cohort 9"])</em> <br>
+          It will not add another list.
+        </p>
+        <h4>Dictionary</h4>
+        <p>
+          <ul>
+            <li>Collection of key/value pairs</li>
+            <li>Bracket notation</li>
+            <li>NO dot notation</li>
+          </ul>
+        </p>
+        <p>
+          If your key is a string, it has to be a string. <br>
+          ex. <em>{"name": "Fred"}</em> <br>
+          Keys can be number, strings, booleans
+        </p>
+        <p>
+          If you want to get a value, you no longer can user dot notation. You use bracket notation <br>
+          ex. <br>
+          <br>
+          <em>
+            my_pairs = { <br>
+              "name": "Fred", <br>
+              "age": 46 <br>
+            } <br>
+            name = my_pairs["name"] <br>
+          </em>
+          <br>
+        </p>
+        <p>
+          <em>
+            my_pairs["last"] = "Jones"
+          </em>
+          Will add a key/value pair to an object
+        </p>
+        <p>
+          You can also nest data. ex. <br>
+          <br>
+          <em>
+            my_pairs["address"] = {"street": "123 Sesame St", "zip": 40503} <br>
+            &nbsp;&nbsp;print(my_pairs["address"]["zip"]) <br>
+          </em>
+          <br>
+      </p>
+      <h4>In Python, <b>WHITE SPACE MATTERS</b></h4>
+      <p>White space/tabs defines scope </p>
+      <p>
+        <em>
+          for key,value in my_pairs.itmes(): <br>
+          &nbsp;&nbsp;print(value) <br>
+        </em>
+        <br>
+        Iterates lists. (.items() will take an object and create a list of key/value pairs)
+      </p>
+      <p>
+        You can also use string interpelation. ex. <br>
+        <br>
+        <em>
+            for key,value in my_pairs.itmes(): <br>
+            &nbsp;&nbsp;print(f"This came from my_pairs:{value}") <br>
+            &nbsp;&nbsp;print(f'Hello, my name is {my_pairs["name"]}') <br>
+        </em>
+        <br>
+      </p>
+      <h4>Sets</h4>
+      <p>
+        A set is just another collection. ex. <br>
+        <br>
+        <em>
+          my_set = {"fred", 3, 12, True, "Jones", 3} <br>
+        </em>
+        <br>
+        You cannot have duplicate values within a set. You can set lists so there are no duplicat values. ex. <br>
+        <br>
+        <em>
+          my_dupes = [1, 2, 3, 2, 4, 5, 1] <br>
+          my_dupes = set(my_dupes) <br>
+          &nbsp;&nbsp;print(list(my_dupes)) <br>
+        </em>
+        <br>
+        set() will return the list as a set with no repeating values, and list() will return the set as a list. <br>
+        Only way to make an empty set is this... ex. <br>
+        <br>
+        <em>
+          empty_set = set() <br>
+        </em>
+        <br>
+      </p>
+      <h4>Tuple</h4>
+      <p>
+        Tuples are a locked down collection. You cannot add anything or take anything away from it. They are immutable. ex. <br>
+        <br>
+        <em>
+          my_tup = ("1", 1, 3, "Hello", True, 3) <br>
+        </em>
+        <br>
+      </p>
+      <h4>Conditionals</h4>
+      <p>
+        <em>
+          name = "Stebe" <br>
+          if name == "Steve" <br>
+          &nbsp;&nbsp;print("I feel good") <br>
+          elif name == "Joe": <br>
+          &nbsp;&nbsp; print("Joe is the king of the World") <br>
+          else: <br>
+          &nbsp;&nbsp;print("I have a cold") <br>
+        </em>
+        <br>
+        Triple equals is no longer a thing. Double equals IS a thing. No type cohersion in python. <br>
+        You are also able to use "is" instead of "==" & "is not" instead of "!=", but can run into problems.
+      </p>
       </div>
     </article>
 
