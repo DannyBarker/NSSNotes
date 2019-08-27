@@ -1619,8 +1619,15 @@
       </div>
     </article>
 
+    <!--
+
+    Week 14
+
+    -->
+
+
     <article class="">
-      <h1 id="d-sixtyfour">June 16th</h1>
+      <h1 id="d-sixtyfour">August 26th</h1>
       <div class="child">
         <h3>First Day of Python</h3>
         <h4>Collections</h4>
@@ -1769,6 +1776,57 @@
           from fileName import function
         </em>
       </p>
+      </div>
+    </article>
+
+    <article class="">
+      <h1 id="d-sixtyfive">August 27th</h1>
+      <div class="child">
+        <h3>Key Word Argument (KWARG)</h3>
+        <p>
+          <em>
+            def list_fave_colors(name, *args): <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;for color in args <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(f"My name is {name}, and one of my fave colors is {color}) <br>
+          </em>
+           <br>
+           *args allows us to pass in multiple arguments
+        </p>
+        <p>
+          <em>
+            def make_family(name, **kwargs): <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;family_str = f"We are the {name} family. " <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;for title, person in kwargs.items(): <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;family_str += f"The {title} is {person}. " <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;return family_str <br>
+          </em>
+          <br>
+          **kwargs (as long as it has "**") will allow you to make an object with any number of key/value pairs
+        </p>
+        <h4>Comprehensions</h4>
+        <p>
+          Shorthand for ForLoops <br>
+          Combines the loop into one line
+        </p>
+        <p>
+          They're cool, but can be hard to read
+        </p>
+        <h4>Map</h4>
+        <p>
+          <em>
+            cap_stuff = list(map(lambda x: x.capitalize(), stuff)) <br>
+          </em>
+          <br>
+          Takes 2 arguments. An anonymous function and the list you want to act on. <br>
+          "lambda" is always "lambda", but "x" can be any variable you want.
+        </p>
+        <p>
+          What a comprehension does ... ex. <br>
+          <br>
+          <em>
+            cap_stuff = [word.capitalize() for word in stuff]
+          </em>
+        </p>
       </div>
     </article>
 
